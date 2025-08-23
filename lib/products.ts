@@ -1,5 +1,4 @@
-}, 
- export interface Product {
+export interface Product {
   id: string
   name: string
   category: "furniture" | "machinery"
@@ -197,7 +196,8 @@ export const products: Product[] = [
       "Training dan support teknis tersedia",
     ],
     inStock: true,
-  
+  }, 
+ 
   {
     id: "sofa-minimalis-01",
     name: "Sofa Minimalis 3 Dudukan",
