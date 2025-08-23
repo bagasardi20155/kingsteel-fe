@@ -1,4 +1,5 @@
-export interface Product {
+}, 
+ export interface Product {
   id: string
   name: string
   category: "furniture" | "machinery"
@@ -211,7 +212,9 @@ export const products: Product[] = [
     features: ["Desain minimalis modern yang timeless", "Busa high density tahan lama hingga 10 tahun", "Fabric anti noda dan mudah dibersihkan", "Konstruksi kayu jati solid anti rayap", "Garansi 2 tahun untuk frame dan busa", "Tersedia dalam 3 pilihan warna elegan",],
     inStock: true,
     featured: true,
-  }export const getProductsByCategory = (category: "furniture" | "machinery") => {
+  },
+]
+export const getProductsByCategory = (category: "furniture" | "machinery") => {
   return products.filter((product) => product.category === category)
 }
 
