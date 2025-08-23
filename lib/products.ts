@@ -196,8 +196,7 @@ export const products: Product[] = [
       "Training dan support teknis tersedia",
     ],
     inStock: true,
-  }, 
- 
+  },
   {
     id: "sofa-minimalis-01",
     name: "Sofa Minimalis 3 Dudukan",
