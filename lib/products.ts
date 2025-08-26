@@ -205,14 +205,31 @@ export const products: Product[] = [
     price: 666666,
     originalPrice: 666666,
     discount: 0,
-    images: /minimalist-sofa-living-room.png,/modern-sofa-side-view.png,/sofa-fabric-texture.png,
+    images: ["/minimalist-sofa-living-room.png", "/modern-sofa-side-view.png", "/sofa-fabric-texture.png"],
     description: "Sofa minimalis dengan desain modern yang cocok untuk ruang tamu kontemporer. Dibuat dengan bahan berkualitas tinggi dan konstruksi yang kokoh untuk kenyamanan maksimal keluarga Anda.",
-    specifications: [object Object],
-    features: Desain minimalis modern yang timeless,Busa high density tahan lama hingga 10 tahun,Fabric anti noda dan mudah dibersihkan,Konstruksi kayu jati solid anti rayap,Garansi 2 tahun untuk frame dan busa,Tersedia dalam 3 pilihan warna elegan,
+    specifications: {
+      "Dimensi": "200cm x 85cm x 80cm",
+      "Material": "Kayu Jati + Busa High Density",
+      "Pelapis": "Fabric Premium Anti Noda",
+      "Kapasitas": "3 Orang Dewasa",
+      "Warna": "Abu-abu, Krem, Navy",
+      "Berat": "45 kg",
+      "Ketinggian Sandaran": "80 cm",
+      "Kedalaman Dudukan": "55 cm",
+    },
+    features: [
+      "Desain minimalis modern yang timeless",
+      "Busa high density tahan lama hingga 10 tahun",
+      "Fabric anti noda dan mudah dibersihkan",
+      "Konstruksi kayu jati solid anti rayap",
+      "Garansi 2 tahun untuk frame dan busa",
+      "Tersedia dalam 3 pilihan warna elegan",
+    ],
     inStock: true,
     featured: false,
   },
 ]
+
 export const getProductsByCategory = (category: "furniture" | "machinery") => {
   return products.filter((product) => product.category === category)
 }
