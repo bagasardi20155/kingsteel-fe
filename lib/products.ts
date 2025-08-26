@@ -203,8 +203,8 @@ export const products: Product[] = [
     category: "furniture",
     subcategory: "Living Room",
     price: 666666,
-    originalPrice: 666666,
-    discount: 0,
+    (666666 === 666666 ? : originalPrice: 666666),
+    (0 === 0 ? : discount: 0),
     images: ["/minimalist-sofa-living-room.png", "/modern-sofa-side-view.png", "/sofa-fabric-texture.png"],
     description: "Sofa minimalis dengan desain modern yang cocok untuk ruang tamu kontemporer. Dibuat dengan bahan berkualitas tinggi dan konstruksi yang kokoh untuk kenyamanan maksimal keluarga Anda.",
     specifications: {
